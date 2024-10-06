@@ -1,0 +1,222 @@
+html{
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+}
+
+nav{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mainNav{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    left: 90px;
+    height: 35px;
+    background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);   
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
+    border-radius: 50px;
+    padding: 10px 20px;
+    position: relative;
+    align-items: center;
+}
+.navtab{
+    margin: 0 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    /* color: #333; */
+    color: white;
+    transition: color 0.3s;
+    font-weight: 600;
+}
+.navtab a{
+    color: #fff;
+    text-decoration: none;
+}
+.navtab:hover {
+    /* color: rgba(255,255,255,0.2); */
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 50px;
+}
+
+.signlog{
+    position: relative;
+}
+.signlog button, .headingMain button{
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-left: 5px;
+}
+.signlog button{
+    cursor: pointer;
+}
+.signlog button, .signlog button::before, .signlog button::after, .headingBut, .headingBut::before, .headingBut::after{
+    background-color: rgba(255,255,255,0.1);
+    box-shadow: 0 8px 32px 0 rgba(80, 81, 94, 0.37);
+    backdrop-filter: blur(7.5);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    transition: 0.3s;
+    border-radius: 50px;
+    padding: 0;
+}
+.signlog button, .signlog button::before, .signlog button::after{
+    width: 100px;
+    height: 45px;
+}
+.signlog button:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+.signlog .basketBut {
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+}
+.signlog .basketBut i {
+    font-size: 20px;
+}
+
+
+
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login img{
+    height: 500px;
+    margin: 0 auto;
+    object-fit: contain;
+    object-position: 50% 50%;
+}
+
+.login-container{
+    margin: 100px auto;
+    color: #fbffff;
+    position: relative;
+    box-shadow: 0 8px 32px 0 rgba(80, 81, 94, 0.37);
+    border: 1px solid #fff;
+    width: 400px;
+    height: 500px;
+    background: #0a0a0a;
+    border-radius: 20px;
+    padding: 40px;
+    overflow: hidden;
+}
+
+.login-container .form-container.sign-up{
+    position: absolute;
+    top: 515px;
+    left: 0;
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    transition: 1s ease-in-out;
+}
+
+.login-container.active .form-container.sign-in, .login-container.active .form-container.sign-up{
+    transform: translateY(-515px);
+}
+
+.form-container h2{
+    font-size: 30px;
+    color: #fbffff;
+    text-align: center;
+}
+
+.input-group{
+    position: relative;
+    margin: 30px 0;
+    border: 2px solid #fbffff;
+    border-radius: 5px;
+}
+
+.input-group:focus{
+    border: 2px solid #9750e9;
+}
+
+.input-group label{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    text-align: center;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #fbffff;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.input-group input{
+    width: 320px;
+    height: 40px;
+    font-size: 16px;
+    color: #fbffff;
+    padding: 0 5px;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.input-group input:focus~label, .input-group input:valid~label{
+    top: 0px;
+    background: #0a0a0a;
+}
+
+.remember{
+    margin: -5px 0 15px 5px;
+}
+.remember label{
+    color: #fbffff;
+    font-size: 14px;
+}
+.remember label input{
+    accent-color: rgba(255,255,255,0.2);
+}
+
+.loginBut{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);   
+    box-shadow: 0 0 10px #fbffff;
+    font-size: 16px;
+    color: #fbffff;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+.loginBut:hover{
+    background: rgba(255,255,255,0.2);
+}
+
+
+.signUp-link{
+    font-size: 14px;
+    text-align: center;
+    margin: 15px 0;
+}
+.signUp-link p{
+    color: rgba(255, 255, 255, 0.7);
+}
+.signUp-link p a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+.signUp-link p a:hover{
+    /*text-decoration: underline;*/
+    color: #fbffff;
+}

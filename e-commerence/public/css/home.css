@@ -1,0 +1,1066 @@
+html{
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+}
+
+nav{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mainNav{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    left: 50px;
+    height: 35px;
+    background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);   
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
+    border-radius: 50px;
+    padding: 10px 20px;
+    position: relative;
+    align-items: center;
+}
+.navtab{
+    margin: 0 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    /* color: #333; */
+    color: white;
+    transition: color 0.3s;
+    font-weight: 600;
+}
+.navtab a{
+    color: #fff;
+    text-decoration: none;
+}
+.navtab:hover {
+    /* color: rgba(255,255,255,0.2); */
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 50px;
+}
+
+.signlog{
+    position: relative;
+}
+.signlog button, .headingMain button{
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-left: 5px;
+}
+.signlog button{
+    cursor: pointer;
+}
+.signlog button, .signlog button::before, .signlog button::after, .headingBut, .headingBut::before, .headingBut::after{
+    background-color: rgba(255,255,255,0.1);
+    box-shadow: 0 8px 32px 0 rgba(80, 81, 94, 0.37);
+    backdrop-filter: blur(7.5);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    transition: 0.3s;
+    border-radius: 50px;
+    padding: 0;
+}
+.signlog button, .signlog button::before, .signlog button::after{
+    width: 120px;
+    height: 45px;
+}
+.signlog button:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+.signlog .basketBut {
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+}
+.signlog .basketBut i {
+    font-size: 20px;
+}
+
+.trackBut{
+    position: relative;
+    top: 5px;
+}
+.signlog a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.headingMain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    flex-direction: column;
+}
+
+.headingBut{
+    width: 20%;
+    height: 45px;
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+    border: 1px solid white;
+}
+.headingMain h1{
+    font-size: 45px;
+    color: white;
+    text-align: center;
+    width: 800px;
+}
+.headingMain h3{
+    font-size: 20px;
+    position: relative;
+    bottom: 40px;
+    width: 600px;
+    color: rgba(255,255,255,0.2); 
+    text-align: center;
+}
+
+.headingMain .newColBut{
+    width: 13%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    bottom: 30px;
+    border-radius: 30px;
+    background: white;
+    color: black;
+    transition: background-color 0.5s, color 0.5s, transform 0.5s;
+
+}
+.headingMain .newColBut i{
+    color: black;
+}
+.newColBut:hover{
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+    transform: scale(1.1);
+}
+.newColBut i{
+    transition: color 0.5s;
+}
+.newColBut:hover i{
+    color: white;
+}
+
+.newReleases{
+    width: 1250px;
+    height: 100%;
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    justify-content: space-evenly;
+}
+.newReleases::-webkit-scrollbar{
+    display: none;
+}
+
+.newReleases-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto;
+}
+#prev, #next{
+    height: 50px;
+    border-radius: 30%;
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+    border: 1px solid white;
+    width: 50px;
+    cursor: pointer;
+    margin: 40px;
+}
+
+.newReleases .slide{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+    flex: none;
+}
+
+.productImg{
+    width: 350px;
+    height: 100%;
+    object-position: 50% 50%;
+    border-radius: 50% / 25%;
+    object-fit: cover;
+    border: 2px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(80, 81, 94, 0.37);
+    /* filter: grayscale(100%); */
+    transition: transform 0.5s;
+}
+
+.productImg:hover{
+    filter: grayscale(0);
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.newR{
+    position: relative;
+}
+
+.infoBox{
+    visibility: hidden;
+    opacity: 0;
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    display: flex;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.7);
+    /* background-color: rgba(255,255,255,0.1); */
+    box-shadow: 0 8px 32px 0 rgba(80, 81, 94, 0.37);
+    color: #fff;
+    padding: 20px;
+    border-radius: 50px;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    transition: opacity 0.5s, visibility 0.5s;
+}
+.newR:hover .infoBox{
+    visibility: visible;
+    opacity: 1;
+}
+.infoBox h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+.infoBox h3{
+    color: #fff;
+    font-size: 15px;
+    margin-top: 30px;
+}
+.previewImg{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border-radius: 30%;
+}
+.saleSec, .abSec {
+    padding: 100px 0;
+}
+
+.saleSec{
+    margin-top: 60px;
+}
+
+.abSec{
+    margin-top: 20px;
+}
+
+.saleInfoCon, .abInfoCon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+
+.oval-container, .oval-container1 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* flex-direction: column; */
+    width: 80%;
+    max-width: 1500px;
+}
+
+.oval-container1{
+    flex-direction: row-reverse;
+}
+
+.oval-con{
+    text-align: start;
+    width: 80%;
+    position: relative;
+    right: 100px;
+}
+
+.oval-container1 .oval-con{
+    text-align: end;
+    left: 100px;
+}
+
+.oval-con h1, .endCon h1 {
+    font-size: 45px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.oval-con h3, .endCon h3 {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 50px;
+}
+
+.oval-con1 {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 85px;
+    top: 30px;
+}
+
+.oval-container1 .oval-con1{
+    left: -95px;
+}
+
+.oval-image {
+    width: 100%;
+    height: auto;
+    border-radius: 50% / 25%;
+    object-fit: cover;
+    max-height: 500px;
+    margin-bottom: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(80, 81, 94, 0.37);
+}
+
+.SaleinfoBox{
+    visibility: hidden;
+    opacity: 0;
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    display: flex;
+    top: 50%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.7);
+    /* background-color: rgba(255,255,255,0.1); */
+    box-shadow: 0 8px 32px 0 rgba(80, 81, 94, 0.37);
+    color: #fff;
+    padding: 20px;
+    border-radius: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s, visibility 0.5s;
+}
+.oval-con1:hover .SaleinfoBox {
+    visibility: visible;
+    opacity: 1;
+}
+.SaleinfoBox h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+.SaleinfoBox h3{
+    color: #fff;
+    font-size: 15px;
+    margin-top: 10px;
+}
+.saleInfoBox img, .ABInfoCon img{
+    top: 100px;
+}
+.saleInfo{
+    padding: 12px;
+}
+.SaleBut{
+    width: 30%;
+    font-weight: bold;
+    padding: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    bottom: 30px;
+    border-radius: 30px;
+    background: white;
+    color: black;
+    transition: background-color 0.5s, color 0.5s, transform 0.5s;
+}
+
+.oval-container1 .oval-con .SaleBut{
+    /* left: 470px; */
+    left: 380px;
+}
+
+.SaleBut:hover{
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+    transform: scale(1.1);
+}
+.saleInfo i{
+    transition: color 0.5s;
+}
+.saleInfo:hover i{
+    color: white;
+}
+
+.socialMarket img{
+    object-fit: cover;
+    object-position: 50% 50%;
+    height: 750px;
+    width: 100%;
+    border: 2px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(80, 81, 94, 0.37);
+    border-radius: 25px;
+    filter: grayscale(50%);
+}
+
+.socialMarket{
+    margin-top: 70px;
+}
+
+.endCon{
+    width: 35%;
+    position: relative;
+    bottom: 750px;
+    left: 50px;
+}
+
+.socialCon{
+    color: white;
+    width: 13%;
+    font-size: 30px;
+    position: relative;
+    /* bottom: 300px; */
+    bottom: 320px;
+    left: 85%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.socialCon i {
+    box-shadow: 0 8px 32px 0 rgba(80, 81, 94, 0.37);
+    transition: color 0.3s;
+}
+
+.socialCon .instagram:hover {
+    color: #E1306C; /* Instagram Brand Color */
+}
+
+.socialCon .snapchat:hover {
+    color: #FFFC00; /* Snapchat Brand Color */
+}
+
+.socialCon .youtube:hover {
+    color: #FF0000; /* YouTube Brand Color */
+}
+
+.socialCon .twitter:hover {
+    color: #1DA1F2; /* Twitter Brand Color */
+}
+
+.socialCon .facebook:hover {
+    color: #1877F2; /* Facebook Brand Color */
+}
+
+.content {
+    min-height: 80vh;
+}
+
+.footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    border-bottom: 2px solid #fff;
+    display: inline-block;
+}
+
+.footer-section p,
+.footer-section ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #555;
+    margin-top: 20px;
+}
+
+.socialConF{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.socialConF a {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+}
+
+.socialConF a:hover .instagram {
+    color: #E1306C;
+}
+
+.socialConF a:hover .snapchat {
+    color: #FFFC00;
+}
+
+.socialConF a:hover .youtube {
+    color: #FF0000;
+}
+
+.socialConF a:hover .twitter {
+    color: #1DA1F2;
+}
+
+.socialConF a:hover .facebook {
+    color: #1877F2;
+}
+
+
+
+
+@media (min-width: 360px) and (max-width: 480px) {
+    .mainNav{
+        left: 40px;
+    }
+
+    .navtab{
+        padding: 0px 5px;
+    }
+
+    .signlog{
+        display: flex;
+        left: 76px;
+    }
+
+    .signlog button, .signlog button::before, .signlog button::after {
+        width: 92px;
+    }
+
+    .headingMain{
+        margin-top: 50px;
+    }
+
+    .headingBut{
+        position: relative;
+        left: 35%;
+        width: 55%;
+        height: 55px;
+    }
+
+    .headingMain h1{
+        width: 525px;
+        position: relative;
+        left: 40%;
+    }
+
+    .headingMain h3{
+        width: 530px;
+        left: 40%;
+    }
+
+    .headingMain .newColBut{
+        width: 50%;
+        left: 40%;
+        justify-content: space-between;
+    }
+
+    .newReleases{
+        width: 435px;
+    }
+
+    .infoBox{
+        width: 50%;
+        height: 50%;
+        left: 47%;
+    }
+
+    .infoBox h3{
+        position: relative;
+        left: 0px;
+    }
+
+    .previewImg{
+        width: 80px;
+        height: 85px;
+        position: relative;
+        top: 20px;
+    }
+
+    .newReleases .slide{
+        grid-gap: 30px;
+        padding: 30px;
+    }
+
+    .productImg{
+        width: 135px;
+    }
+
+    .oval-con{
+        left: 320px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .oval-con h1, .oval-container1 .oval-con h1{
+        width: 660px;
+    }
+
+    .oval-con h3, .oval-container1 .oval-con h3{
+        width: 600px;
+    }
+
+    .SaleBut{
+        width: 60%;
+        padding: 10px;
+        justify-content: space-between;
+    }
+
+    .oval-image{
+        width: 600px;
+        top: 280px;
+        position: relative;
+        right: 50px;
+    }
+
+    .SaleinfoBox{
+        top: 440px;
+        left: 35%;
+        width: 80%;
+    }
+
+    .SaleinfoBox .previewImg{
+        top: 0px;
+    }
+
+    .abSec{
+        margin-top: 220px;
+    }
+
+    .oval-container1 .oval-con{
+        left: 0;
+        text-align: center;
+    }
+
+    .oval-container1 .oval-con .SaleBut{
+        left: 20px;
+    }
+
+    .oval-container1 .oval-con1 .oval-image{
+        width: 600px;
+        top: 280px;
+        position: relative;
+        left: 370px;
+    }
+
+    .oval-container1 .SaleinfoBox{
+        left: 530px;
+    }
+
+    .socialMarket {
+        margin-top: 350px;
+    }
+
+    .socialMarket img{
+        width: 680px;
+    }
+
+    .endCon{
+        width: 575px;
+    }
+
+    .socialCon{
+        width: 55%;
+        left: 445px;
+    }
+
+    .footer{
+        width: 685px;
+    }
+}
+
+@media (min-width: 760px) and (max-width: 1024px) {
+    body{
+        margin: 0;
+        padding: 0;
+        width: 57%;
+    }
+
+    .mainNav{
+        left: 80px;
+    }
+
+    .navtab{
+        padding: 0px 6px;
+    }
+
+    .signlog{
+        display: flex;
+        left: 130px;
+    }
+
+    .signlog button, .signlog button::before, .signlog button::after {
+        width: 92px;
+    }
+
+    .headingBut{
+        position: relative;
+        width: 52%;
+        height: 45px;
+        left: 33%;
+    }
+
+    .headingMain h1, .headingMain h3{
+        position: relative;
+        left: 152px;
+    }
+
+    .headingMain h1{
+        font-size: 35px;
+        width: 545px;
+    }
+
+    .headingMain .newColBut{
+        width: 50%;
+        left: 32%;
+        justify-content: space-between;
+    }
+
+    .newReleases {
+        width: 500px; /* Adjusting the width of the slider */
+        display: flex; /* Ensuring the slides are laid out horizontally */
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+        justify-content: space-evenly;
+    }
+
+    .newReleases .slide {
+        display: flex; /* Flexbox for horizontal layout */
+        flex-direction: row; /* Align items in a row */
+        gap: 30px; /* Gap between images */
+        padding: 20px;
+        width: fit-content; /* Ensure slide container is just wide enough to contain the content */
+    }
+
+    .newR {
+        flex: 0 0 auto; /* Ensure each item takes up its space and doesn't shrink */
+        margin-right: 10px; /* Space between items */
+    }
+
+    .infoBox{
+        width: 30%;
+        height: 30%;
+        left: 50%;
+    }
+
+    .previewImg {
+        width: 120px;
+        height: 120px
+    }
+
+    .infoBox h3{
+        left: 0px;
+    }
+
+    .oval-con1{
+        width: initial;
+    }
+
+    .oval-con{
+        left: 460px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .oval-con h1, .oval-container1 .oval-con h1{
+        width: 660px;
+    }
+
+    .oval-con h3, .oval-container1 .oval-con h3{
+        width: 600px;
+    }
+
+    .SaleBut{
+        width: 60%;
+        padding: 10px;
+        justify-content: space-between;
+    }
+
+    .oval-image{
+        width: 600px;
+        top: 280px;
+        position: relative;
+        right: 60px;
+    }
+
+    .SaleinfoBox{
+        top: 440px;
+        left: 41%;
+        width: 45%;
+    }
+
+    .SaleinfoBox .previewImg{
+        top: 0px;
+    }
+
+    .abSec{
+        margin-top: 220px;
+    }
+
+    .oval-container1 .oval-con{
+        left: -135px;
+        text-align: center;
+    }
+
+    .oval-container1 .oval-con .SaleBut{
+        left: 0px;
+    }
+
+    .oval-container1 .oval-con1 .oval-image{
+        width: 600px;
+        top: 280px;
+        position: relative;
+        left: 395px;
+    }
+
+    .oval-container1 .SaleinfoBox{
+        left: 115%;
+    }
+
+    .socialMarket {
+        margin-top: 350px;
+        padding: 0 10px;
+    }
+
+    .socialMarket img{
+        width: 745px;
+    }
+
+    .endCon{
+        width: 575px;
+        left: 35px;
+        bottom: 770px;
+    }
+
+    .socialCon{
+        width: 50%;
+        left: 490px;
+    }
+
+    .footer{
+        width: 768px;
+    }
+
+}
+
+
+
+@media (min-width: 1024px) and (max-width: 1124px){
+    .mainNav {
+        left: 200px;
+    }
+
+    .navtab {
+        padding: 0px 8px;
+    }
+
+    .signlog{
+        display: flex;
+        left: 365px;
+    }
+
+    .headingBut{
+        left: 35%;
+    }
+
+    .headingMain h1 {
+        position: relative;
+        font-size: 35px;
+        width: 815px;
+        left: 215px;
+    }
+
+    .headingMain h3{
+        left: 220px;
+    }
+
+    .headingMain .newColBut{
+        left: 35%;
+    }
+
+    .newReleases {
+        width: 750px;
+    }
+
+    .infoBox{
+        width: 25%;
+        height: 25%;
+        left: 50%;
+    }
+
+    .previewImg {
+        width: 100px;
+        height: 100px
+    }
+
+    .infoBox h3{
+        left: 0px;
+    }
+
+    .saleSec{
+        margin-top: 0px;
+    }
+
+    .oval-con h1, .oval-container1 .oval-con h1 {
+        width: 910px;
+    }
+
+    .oval-con {
+        left: 625px;
+    }
+
+    .oval-image{
+        width: 800px;
+        right: 55px;
+    }
+
+    .SaleinfoBox {
+        top: 500px;
+        left: 43%;
+    }
+
+    .oval-container1 .oval-con h1 {
+        width: 750px;
+    }
+
+    .oval-container1 .oval-con {
+        left: -180px;
+    }
+
+    .oval-container1 .oval-con1 .oval-image {
+        width: 800px;
+        left: 505px;
+    }
+
+    .oval-container1 .SaleinfoBox {
+        left: 113%;
+    }
+
+    .socialMarket img {
+        width: 1000px;
+    }
+
+    .socialCon{
+        left: 690px;
+    }
+
+    .footer {
+        width: 1023px;
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1500px) {
+    .signlog{
+        display: flex;
+        right: 10px;
+    }
+    
+    .newReleases {
+        width: 950px; /* Adjusting the width of the slider */
+        display: flex; /* Ensuring the slides are laid out horizontally */
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+        justify-content: space-evenly;
+    }
+
+    .newReleases .slide {
+        display: flex; /* Flexbox for horizontal layout */
+        flex-direction: row; /* Align items in a row */
+        gap: 30px; /* Gap between images */
+        padding: 20px;
+        width: fit-content; /* Ensure slide container is just wide enough to contain the content */
+    }
+
+    .newR {
+        flex: 0 0 auto; /* Ensure each item takes up its space and doesn't shrink */
+        margin-right: 10px; /* Space between items */
+    }
+
+    .oval-container1 .oval-con .SaleBut {
+        left: 320px;
+    }
+
+    .socialMarket img{
+        position: relative;
+        right: 2px;
+    }
+
+    .endCon{
+        bottom: 760px;
+        width: 44%;
+    }
+
+    .socialCon{
+        bottom: 330px;
+        width: 22%;
+        left: 76%;
+    }
+}
+
+@media (min-width: 1600px) and (max-width: 2200px) {
+    .oval-container .oval-con .SaleBut {
+        right: 5px;
+    }
+
+    .oval-container1 .oval-con .SaleBut {
+        left: 465px;
+    }
+}

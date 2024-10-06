@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <link rel="stylesheet" href="css/login.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>E-C</title>
+</head>
+<body>
+    <nav>
+        <div class="logo"><img src="images/DALL·E 2024-07-28 15.23.35 - A sleek, modern streetwear logo in black and white with a plain white background. The design should be abstract, with sharp, clean lines, and high con.png" width="100"></div>
+        
+        <div class="mainNav">
+            <div class="navtab active" data-target="home"><a href="home.html">Home</a></div>
+            <div class="navtab" data-target="about"><a href="shop.html">Shop</a></div>
+            <div class="navtab" data-target="contact"><a href="contact.html">Contact</a></div>
+            <div class="navtab" data-target="page4"><a href="blog.html">Blog</a></div>
+            <div class="navtab" data-target="page5"><a href="showcase.html">Showcase</a></div>
+            <div class="underline"></div>
+        </div>
+
+        <div class="signlog">
+            <button class="basketBut"><a href="shoppingbasket.html"><i class="fa fa-shopping-basket"></i></a></button>
+            <!-- <button><span>Sign Up</span></button>
+            <button><span>Login</span></button> -->
+            <button class="trackBut"><span><a href="trackPackage.html">Track Package</a></span></button>
+        </div>
+    </nav>
+
+
+    <section class="login">
+        <div class="login-container">
+            <div class="form-container sign-in">
+                <form action="#">
+                    <h2>Login</h2>
+                    <div class="input-group">
+                        <input type="text" required>
+                        <label for="">Username</label>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="password" required>
+                        <label for="">Password</label>
+                    </div>
+
+                    <div class="remember">
+                        <label for=""><input type="checkbox">Remeber Me</label>
+                    </div>
+
+                    <button class="loginBut" type="submit">Login</button>
+
+                    <div class="signUp-link">
+                        <p>Don't have an account? <a href="#" class="signUpBtn-link">Sign Up</a></p>
+                    </div>
+                </form>
+            </div>
+
+            <div class="form-container sign-up">
+                <form action="#">
+                    <h2>Sign Up</h2>
+                    <div class="input-group">
+                        <input type="text" required>
+                        <label for="">Username</label>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="email" required>
+                        <label for="">Email</label>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="password" required>
+                        <label for="">Password</label>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="password" required>
+                        <label for="">Confirm Password</label>
+                    </div>
+
+                    <div class="remember">
+                        <label for=""><input type="checkbox">I agree to the terms & conditions</label>
+                    </div>
+
+                    <button class="loginBut" type="submit">Sign up</button>
+
+                    <div class="signUp-link">
+                        <p>Already have an account? <a href="#" class="signInBtn-link">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+<script>
+    const signInbtn = document.querySelector('.signInBtn-link');
+    const signUpbtn = document.querySelector('.signUpBtn-link');
+    const container = document.querySelector('.login-container');
+
+    signUpbtn.addEventListener('click', () => {
+        container.classList.toggle('active');
+    });
+    signInbtn.addEventListener('click', () => {
+        container.classList.toggle('active');
+    });
+</script>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <link rel="stylesheet" href="css/contact.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>E-C</title>
+</head>
+<body>
+    <nav>
+        <div class="logo"><img src="images/DALL·E 2024-07-28 15.23.35 - A sleek, modern streetwear logo in black and white with a plain white background. The design should be abstract, with sharp, clean lines, and high con.png" width="100"></div>
+        
+        <div class="mainNav">
+            <div class="navtab active" data-target="home"><a href="home.html">Home</a></div>
+            <div class="navtab" data-target="about"><a href="shop.html">Shop</a></div>
+            <div class="navtab" data-target="contact"><a href="contact.html">Contact</a></div>
+            <div class="navtab" data-target="page4"><a href="blog.html">Blog</a></div>
+            <div class="navtab" data-target="page5"><a href="showcase.html">Showcase</a></div>
+            <div class="underline"></div>
+        </div>
+
+        <div class="signlog">
+            <button class="basketBut"><a href="shoppingbasket.html"><i class="fa fa-shopping-basket"></i></a></button>
+            <!-- <button><span>Sign Up</span></button>
+            <button><span>Login</span></button> -->
+            <button class="trackBut"><span><a href="trackPackage.html">Track Package</a></span></button>
+        </div>
+    </nav>
+
+    <section class="main-contactSec">
+        <div class="information-contact">
+            <div class="locationInfo">
+                <h1>Location</h1>
+                <h2>28 Jackson Blvd Ste 1020 Chicago <br>
+                    IL 60604-2340 </h2>
+            </div>
+
+            <div class="socialMinfo">
+                <h1>Follow Us</h1>
+                <div class="socialCon">
+                    <i class="fa fa-instagram instagram"></i>
+                    <i class="fa fa-snapchat-ghost snapchat"></i>
+                    <i class="fa fa-youtube youtube"></i>
+                    <i class="fa fa-twitter twitter"></i>
+                    <i class="fa fa-facebook facebook"></i>
+                </div>
+
+                <h3 class="privacyInfo">@2018 Privacy policy</h3>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <h1>Contact Form</h1>
+            <div class="form-container">
+                <form action="/submit" method="post" enctype="multipart/form-data">
+                    <input type="text" name="name" placeholder="Enter your Name" required>
+                    <input type="email" name="email" placeholder="Enter a valid email address" required>
+                    <textarea name="message" placeholder="Enter your message" required></textarea>
+                    <div class="file-upload">
+                        <label for="file-input" class="file-label">Attach a photo</label>
+                        <input type="file" id="file-input" name="attachment" accept="image/*">
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

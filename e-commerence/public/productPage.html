@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <link rel="stylesheet" href="css/productPage.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>E-C</title>
+</head>
+<body>
+    <nav>
+        <div class="logo"><img src="images/DALL·E 2024-07-28 15.23.35 - A sleek, modern streetwear logo in black and white with a plain white background. The design should be abstract, with sharp, clean lines, and high con.png" width="100"></div>
+        
+        <div class="mainNav">
+            <div class="navtab active" data-target="home"><a href="home.html">Home</a></div>
+            <div class="navtab" data-target="about"><a href="shop.html">Shop</a></div>
+            <div class="navtab" data-target="contact"><a href="contact.html">Contact</a></div>
+            <div class="navtab" data-target="page4"><a href="blog.html">Blog</a></div>
+            <div class="navtab" data-target="page5"><a href="showcase.html">Showcase</a></div>
+            <div class="underline"></div>
+        </div>
+
+        <div class="signlog">
+            <button class="basketBut"><a href="shoppingbasket.html"><i class="fa fa-shopping-basket"></i></a></button>
+            <!-- <button><span>Sign Up</span></button>
+            <button><span>Login</span></button> -->
+            <button class="trackBut"><span><a href="trackPackage.html">Track Package</a></span></button>
+        </div>
+    </nav>
+
+    <section class="product-sec">
+        <div class="image-slider">
+            <button class="prevbtn">&lt;</button>
+            <img src="images/cloth9.jpg" alt="" class="productImage">
+            <button class="nextbtn">&gt;</button>
+        </div>
+
+        <div class="productInfo">
+            <div class="prodInfo">
+                <h1>Casual T Shirt</h1>
+                <h2>$15.00</h2>
+                <h5>30% OFF</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eos placeat voluptatem dignissimos iste at, porro dolor sunt, quisquam dolores magnam voluptatibus modi blanditiis! Quas ullam voluptate voluptates temporibus perferendis!</p>
+            </div>
+
+            <div class="productOptions">
+                <div class="size-options">
+                    <div class="option-title">Size</div>
+                    <span class="selected">S</span>
+                    <span>M</span>
+                    <span>L</span>
+                    <span>XL</span>
+                    <span>XXL</span>
+                    <h4 id="showSizeChart" class="showSizeChart">Size Chart</h4>
+                </div>
+                
+                <div class="color-options">
+                    <div class="option-title">Color</div>
+                    <span class="color-red"></span>
+                    <span class="color-green"></span>
+                    <span class="color-blue selected"></span>
+                    <span class="color-pink"></span>
+                </div>
+                
+                <div class="quantity-options">
+                    <div class="option-title">Quantity</div>
+                    <input type="number" value="1">
+                </div>
+
+                <button class="mainProductbtn">Add To Cart</button>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="popularProducts">
+        <h2 class="product-cat">Recommended items for you</h2>
+        <button class="pre-btn"><</button>
+        <button class="next-btn">></button>
+
+        <div class="product-container">
+            <div class="product-card">
+                <div class="product-image">
+                    <!-- <span class="discount-tag">50% off</span> -->
+                    <img class="product-thumb" src="images/cloth8.avif" alt="">
+                    <button class="card-btn">Add To Cart</button>
+                </div>
+
+                <div class="product-info">
+                    <!--<h2 class="product-brand">Brand</h2>-->
+                    <p class="productDesc">A short line about the product</p>
+                    <span class="product-price">£20</span>
+                    <!-- <span class="actual-price">£40</span> -->
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <!-- <span class="discount-tag">50% off</span> -->
+                    <img class="product-thumb" src="images/cloth9.jpg" alt="">
+                    <button class="card-btn">Add To Cart</button>
+                </div>
+
+                <div class="product-info">
+                    <!--<h2 class="product-brand">Brand</h2>-->
+                    <p class="productDesc">A short line about the product</p>
+                    <span class="product-price">£20</span>
+                    <!-- <span class="actual-price">£40</span> -->
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">50% off</span>
+                    <img class="product-thumb" src="images/cloth7.jpg" alt="">
+                    <button class="card-btn">Add To Cart</button>
+                </div>
+
+                <div class="product-info">
+                    <!--<h2 class="product-brand">Brand</h2>-->
+                    <p class="productDesc">A short line about the product</p>
+                    <span class="product-price">£20</span>
+                    <span class="actual-price">£40</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <!-- <span class="discount-tag">50% off</span> -->
+                    <img class="product-thumb" src="images/cloth6.avif" alt="">
+                    <button class="card-btn">Add To Cart</button>
+                </div>
+
+                <div class="product-info">
+                    <!--<h2 class="product-brand">Brand</h2>-->
+                    <p class="productDesc">A short line about the product</p>
+                    <span class="product-price">£20</span>
+                    <!-- <span class="actual-price">£40</span> -->
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">50% off</span>
+                    <img class="product-thumb" src="images/cloth5.jpg" alt="">
+                    <button class="card-btn">Add To Cart</button>
+                </div>
+
+                <div class="product-info">
+                    <!--<h2 class="product-brand">Brand</h2>-->
+                    <p class="productDesc">A short line about the product</p>
+                    <span class="product-price">£20</span>
+                    <span class="actual-price">£40</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">50% off</span>
+                    <img class="product-thumb" src="images/cloth4.avif" alt="">
+                    <button class="card-btn">Add To Cart</button>
+                </div>
+
+                <div class="product-info">
+                    <!--<h2 class="product-brand">Brand</h2>-->
+                    <p class="productDesc">A short line about the product</p>
+                    <span class="product-price">£20</span>
+                    <span class="actual-price">£40</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <!-- <span class="discount-tag">50% off</span> -->
+                    <img class="product-thumb" src="images/cloth3.avif" alt="">
+                    <button class="card-btn">Add To Cart</button>
+                </div>
+
+                <div class="product-info">
+                    <!--<h2 class="product-brand">Brand</h2>-->
+                    <p class="productDesc">A short line about the product</p>
+                    <span class="product-price">£20</span>
+                    <!-- <span class="actual-price">£40</span> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="size-chart-container">
+        <button id="close-btn" class="unit-btn active">X</button>
+
+        <h1>Size chart</h1>
+        <div class="unit-toggle">
+            <button id="inches-btn" class="unit-btn active">in.</button>
+            <button id="cm-btn" class="unit-btn">cm</button>
+        </div>
+        <div class="table-container">
+            <table class="size-chart" id="size-chart">
+                <thead>
+                    <tr>
+                        <th>US – Men's</th>
+                        <th>3.5</th>
+                        <th>4</th>
+                        <th>4.5</th>
+                        <th>5</th>
+                        <th>5.5</th>
+                        <th>6</th>
+                        <th>6.5</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>US – Women's</td>
+                        <td>5</td>
+                        <td>5.5</td>
+                        <td>6</td>
+                        <td>6.5</td>
+                        <td>7</td>
+                        <td>7.5</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>UK</td>
+                        <td>3</td>
+                        <td>3.5</td>
+                        <td>4</td>
+                        <td>4.5</td>
+                        <td>5</td>
+                        <td>5.5</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>EU</td>
+                        <td>35.5</td>
+                        <td>36</td>
+                        <td>36.5</td>
+                        <td>37.5</td>
+                        <td>38</td>
+                        <td>38.5</td>
+                        <td>39</td>
+                    </tr>
+                    <tr class="foot-length">
+                        <td>Foot length (in.)</td>
+                        <td>8 1/2</td>
+                        <td>8 11/16</td>
+                        <td>8 13/16</td>
+                        <td>9</td>
+                        <td>9 3/16</td>
+                        <td>9 5/16</td>
+                        <td>9 1/2</td>
+                    </tr>
+                    <tr class="foot-length cm">
+                        <td>Foot length (cm)</td>
+                        <td>21.6</td>
+                        <td>22.1</td>
+                        <td>22.4</td>
+                        <td>22.9</td>
+                        <td>23.3</td>
+                        <td>23.7</td>
+                        <td>24.1</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    const images = [
+        "images/cloth9.jpg",
+        "images/cloth1.avif",
+        "images/cloth8.avif"
+    ];
+
+    let currentImageIndex = 0;
+
+    const productImage = document.querySelector('.productImage');
+    const prevBtn = document.querySelector('.prevbtn');
+    const nexBtn = document.querySelector('.nextbtn');
+
+    function updateImage() {
+        productImage.src = images[currentImageIndex];
+    }
+
+    nexBtn.addEventListener('click', () => {
+        currentImageIndex = (currentImageIndex === images.length - 1) ? 0 : currentImageIndex + 1;
+        updateImage();
+    });
+
+    prevBtn.addEventListener('click', () => {
+        currentImageIndex = (currentImageIndex === 0) ? images.length - 1 : currentImageIndex - 1;
+        updateImage();
+    });
+
+    document.querySelectorAll('.size-options span').forEach(item => {
+        item.addEventListener('click', function() {
+            document.querySelector('.size-options .selected').classList.remove('selected');
+            this.classList.add('selected');
+        });
+    });
+
+    document.querySelectorAll('.color-options span').forEach(item => {
+        item.addEventListener('click', function() {
+            document.querySelector('.color-options .selected').classList.remove('selected');
+            this.classList.add('selected');
+        });
+    });
+</script>
+
+<script>
+    function toggleFilter(filterId) {
+        var filterContent = document.getElementById(filterId);
+        var icon = filterContent.previousElementSibling.querySelector('i');
+        if (filterContent.style.display === 'none' || filterContent.style.display === '') {
+            filterContent.style.display = 'block';
+            icon.classList.remove('fa-chevron-down');
+            icon.classList.add('fa-chevron-up');
+        } else {
+            filterContent.style.display = 'none';
+            icon.classList.remove('fa-chevron-up');
+            icon.classList.add('fa-chevron-down');
+        }
+    }
+</script>
+
+<script>
+    const productContaiers = [...document.querySelectorAll('.product-container')];
+    const nextBtn = [...document.querySelectorAll('.next-btn')];
+    const preBtn = [...document.querySelectorAll('.pre-btn')];
+
+    productContaiers.forEach((item, i) => {
+        let containerDimensions = item.getBoundingClientRect();
+        let containerWidth = containerDimensions.width;
+
+        nextBtn[i].addEventListener('click', () => {
+            item.scrollLeft += containerWidth;
+        })
+
+        preBtn[i].addEventListener('click', () => {
+            item.scrollLeft -= containerWidth;
+        })
+    })
+</script>
+
+
+
+<script>
+    document.getElementById('inches-btn').addEventListener('click', function() {
+        document.querySelectorAll('.cm').forEach(function(row) {
+            row.style.display = 'none';
+        });
+        document.querySelectorAll('.foot-length').forEach(function(row) {
+            row.style.display = 'table-row';
+        });
+        this.classList.add('active');
+        document.getElementById('cm-btn').classList.remove('active');
+    });
+
+    document.getElementById('cm-btn').addEventListener('click', function() {
+        document.querySelectorAll('.cm').forEach(function(row) {
+            row.style.display = 'table-row';
+        });
+        document.querySelectorAll('.foot-length').forEach(function(row) {
+            if (!row.classList.contains('cm')) {
+                row.style.display = 'none';
+            }
+        });
+        this.classList.add('active');
+        document.getElementById('inches-btn').classList.remove('active');
+    });
+
+    document.getElementById('showSizeChart').addEventListener('click', function() {
+            document.querySelectorAll('.size-chart-container').forEach(function(container) {
+                container.style.display = 'block';
+            });
+    });
+
+    document.getElementById('close-btn').addEventListener('click', function() {
+            document.querySelectorAll('.size-chart-container').forEach(function(container) {
+                container.style.display = 'none';
+            });
+    });
+
+    // Initially hide cm rows
+    document.getElementById('inches-btn').click();
+</script>
+
+
+</html>
